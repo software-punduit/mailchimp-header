@@ -73,26 +73,26 @@ div.right-nav p {
 
 .circle {
   display: inline-block;
-  width: 20px;
-  height: 20px;
+  width: 48px;
+  height: 48px;
   border-radius: 50%;
+  /* horizontally center text */
+  text-align: center;
+  /* vertically center text */
+  line-height: 48px;
   background-color: brown;
 }
 
-.nav-items li a.active {
-  color: var(--primary-color);
-  text-decoration: none;
-}
-nav-items li a.active hoover {
-  position: relative;
-  text-decoration: underline;
+.vertical-line {
+  height: 100%;
+  border-left: 1px solid #444;
+  display: inline-block;
+  margin: 0 16px;
 }
 
-nav-items li a.active::after {
-  content: "";
-  background-color: var(--primary-color);
-  transition: 0.08s;
-  position: absolute;
+.nav-items li a:hover {
+  color: var(--primary-color);
+  text-decoration: underline;
 }
 
 .btn1,
